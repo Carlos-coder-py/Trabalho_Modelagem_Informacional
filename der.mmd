@@ -1,0 +1,35 @@
+erDiagram
+    MARCA {
+        int id_marca PK
+        string nome_marca UK
+    }
+
+    CATEGORIA {
+        int id_categoria PK
+        string nome_categoria UK
+    }
+
+    TAMANHO {
+        int id_tamanho PK
+        string valor_tamanho UK
+    }
+
+    PRODUTO {
+        int id_produto PK
+        string codigo_produto UK
+        string descricao
+        int id_marca FK
+        int id_categoria FK
+        decimal preco_tabela
+        decimal preco_venda
+    }
+
+    PRODUTO_TAMANHO {
+        int id_produto PK_FK
+        int id_tamanho PK_FK
+    }
+
+    MARCA     ||--o{ PRODUTO          : "fabrica"
+    CATEGORIA ||--o{ PRODUTO          : "classifica"
+    PRODUTO   ||--o{ PRODUTO_TAMANHO  : "disponivel em"
+    TAMANHO   ||--o{ PRODUTO_TAMANHO  : "usado por"

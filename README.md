@@ -39,7 +39,7 @@ O script faz tudo em sequência e imprime o progresso no console:
 1. **Lê e limpa** o `products.csv` — extrai marca, categoria e a lista de tamanhos de cada produto, e trata os preços de tabela (MRP) inválidos (ver Seção "Qualidade de dados" abaixo).
 2. **Cria o banco** executando `banco_dados.sql` (tabelas + views).
 3. **Carrega os dados**, imprimindo quantas marcas, categorias, tamanhos e produtos foram inseridos.
-4. **Roda 2 testes de integridade ao vivo**:
+4. **Roda 2 testes de integridade**:
    - tenta inserir um produto com `preco_tabela` menor que `preco_venda` → rejeitado pelo `CHECK`;
    - tenta duplicar um `codigo_produto` já existente → rejeitado pelo `UNIQUE`.
 5. **Mostra uma amostra das views** (`vw_catalogo_completo`, `vw_resumo_por_categoria`, `vw_resumo_por_marca`).

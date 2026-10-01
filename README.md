@@ -55,4 +55,4 @@ sqlite3 catalogo.db "SELECT * FROM vw_resumo_por_categoria;"
 O `products.csv` é o mesmo dataset usado no de PLN, onde ele é indexado e consultado por 5 algoritmos de busca (linear, booleano, TF-IDF, BM25, LSA). Lá, ele é tratado como **corpus de texto**; aqui, ele é tratado como **dado estruturado**. Os dois trabalhos são complementares: a qualidade do dado normalizado neste projeto (descrições, marcas e categorias corretas e sem ambiguidade) é exatamente o que sustenta a qualidade da busca no outro projeto.
 
 ## Imagem do DER feito no Mermaid Live Editor
-![Texto alternativo para a imagem](DER.png)
+<img width="1440" height="815" alt="DER" src="https://github.com/user-attachments/assets/dde83216-9dea-48bb-93a1-76318f52c9e4" />

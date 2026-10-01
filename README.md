@@ -1,7 +1,7 @@
 # Trabalho - Modelagem Informacional
 ### Trilha C — Modelagem Relacional Completa, Normalização até 3FN e SQL
 
-**Cenário:** Normalização do catálogo real de produtos de e-commerce (moda/beleza) que também é usado como corpus no trabalho de Recuperação da Informação (T1 RI) — aqui ele deixa de ser um CSV solto e passa a ser um banco relacional íntegro.
+**Cenário:** Normalização do catálogo real de produtos de e-commerce (moda/beleza) que também é usado como corpus no trabalho de Recuperação da Informação (PLN) — aqui ele deixa de ser um CSV solto e passa a ser um banco relacional íntegro.
 
 ---
 
@@ -14,7 +14,7 @@
 | `main.py` | Código Python único, comentado: lê o CSV, limpa os dados e carrega no banco |
 | `der.mmd` | Diagrama Entidade-Relacionamento em Mermaid.js
 | `README.md` | Este arquivo |
-| `relatorio_executivo.pdf` | Relatório executivo (contexto, normalização, resultados, ROI) |
+| `relatorio_executivo.md` | Relatório executivo (contexto, normalização, resultados, ROI) |
 
 ## Pré-requisitos
 
